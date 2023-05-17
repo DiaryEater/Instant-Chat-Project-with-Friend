@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: cursive;
+    background: whitesmoke;
+    position: relative;
+}
+
+h1 {
+    font-size: 45px;
+    color: rgb(138, 223, 11);
+    text-align: center;
+}
+
+.containair {
+    width: 85vh;
+    height: 85vh;
+    color: white;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 42.5vh;
+    background: rgba(0, 0, 0, 0.801);
+}
+.containair p {
+    margin: auto;
+    text-align: center;
+}
+
+#les_inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 76%;
+    height: 20%;
+    margin: auto;
+    margin-top: 13vh;
+}
+
+.les_inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.les_inputs input {
+    width: 75%;
+    height: 5.5vh;
+    text-align: center;
+    font-size: 17px;
+    border: none;
+    border-radius: 5vh;
+    background: #ffff;
+}
+
+.sign_up {
+    width: 7vw;
+    height: 7vh;
+    margin: auto;
+    margin-top: 35px;
+} 
+#sign_up {
+    width: 100%;
+    height: 100%;
+    font-family: cursive;
+    font-size: large;
+    border: #ffff;
+    border-radius: 30px;
+    background: #ffff;
+}
+
+.conseil1 {
+    margin-top: -63vh;
+    margin-left: 5vh;
+    position: absolute;
+}
+.conseil1 p {
+    font-size: 22.5px;
+}
+
+.conseil2 {
+    margin-top: -50vh;
+    margin-left: calc(85vh + 35%);
+    position: absolute;
+}
+.conseil2 p {
+    font-size: 22.5px;
+}
+
+/*
+.containair p {
+    text-align: center;
+}
+.containair div {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    width: 75%;
+    height: 5.5vh;
+    text-align: center;
+    font-size: 17px;
+    border: none;
+    border-radius: 5vh;
+    background: #ffff;
+}
+button {
+    width: 7vw;
+    height: 5.5vh;
+    font-family: cursive;
+    font-size: large;
+    border: #ffff;
+    border-radius: 30px;
+    background: #ffff;
+}*/
+
