@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Chat</title>
+    <link rel="icon" href="images/IC.png">
+
+    <link rel="stylesheet" href="themes.css">
+    <script src="themes.js" defer></script>
+</head>
+
+<body>
+    <div class="containair">
+        <!-- place des rooms existants -->
+        <div class="room"> 
+            <div id="room_containair">
+                <br><br>
+                <h2 id="instant_chat">Instant Chat</h2>
+
+                <br>
+                <input type="text" id="room_input" placeholder="Search Room">
+
+                <br><br>
+                <div class="list_room">
+                    <div class="my_room">
+                        <!-- PDP_du_room : 
+                            - 'class' pour la liste des room_s ;
+                            - 'id' pour la PDP dans la room de discuss 
+                        -->
+                        <img src="images/in the forest.jpg" class="PDP_du_room" alt="PDP du room">
+
+                        <div class="dernier_message">
+                            <h4 class="room_name1">H44</h4>
+                            <p class="last_message">BOn et alors </p>
+                        </div>
+                    </div>
+
+                    <div class="my_room my_room_after">
+                        <img src="images/megan.jpg" class="PDP_du_room" alt="PDP du room">
+
+                        <div class="dernier_message">
+                            <h4 class="room_name2"> both</h4>
+                            <p class="last_message"> sdgsgsgs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- le chat room -->
+        <div class="discussion">
+            <div id="header">
+                <div class="header">
+                    <div class="profil">
+                        <img src="images/in the forest.jpg" id="PDP_du_room" alt="PDP du room">
+                        <h4 id="room_name"> H44 </h4>
+                    </div>
+
+                    <!-- pour le mode Dark et Light -->
+                    <div id="mode_sombre">
+                        <div id="mode_sombre_boule"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="discuss">
+            </div>
+
+            <!-- l'input de chat se trouve ici -->
+            <div id="footer"> 
+                <input type="text" id="input_discuss" placeholder="Write here ...">
+
+                <div id="send_div">
+                    <img src="images/new_send.png" id="send" alt="send a message">
+                </div>
+            </div>
+        </div>
+
+        <!-- listes des themes -->
+        <div class="themes">
+            <h2>Choose your Themes</h2>
+
+            <div>
+                <div id="neomorph"></div>
+                <p class="themes_name">Neomorph</p>
+            </div>
+
+            <div>
+                <div id="linear-gradient"></div>
+                <p class="themes_name">Linear-Gradient</p>
+            </div>
+
+            <div>
+                <div><img src="images/IC.png" id="personalized_themes" alt="Personalized themes"></div>
+                <p class="themes_name">Personalized</p>
+            </div>
+
+            <div id="div_in_the_forest">
+                <div><img src="images/in the forest.jpg" id="in_the_forest" alt="In the forest"></div>
+                <p class="themes_name">In the Forest</p>
+            </div>
+
+            <div>
+                <div><img src="images/megan.jpg" id="megan" alt="Megan"></div>
+                <p id="meganP" class="themes_name">Megan</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

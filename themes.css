@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* à partir d'ici commence le "dark_mode"; le "light_mode" à la ligne `245` */
+.containair {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 99vh;
+    margin: auto;
+    background: #0A0A07;
+}
+
+.room {
+    width: 27%;
+    height: 99vh;
+    color: white;
+    border: 1.9px solid #34342e69;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+#room_containair {
+    width: 95%;
+    margin: auto;
+}
+
+#room_input {
+    width: 100%;
+    height: 6vh;
+    padding-left: 12px;
+    color: #ffff;
+    font-size: 17px;
+    border: none;
+    border-radius: 4.8px;
+    background: #34342e69;
+}
+
+.my_room {
+    width: 100%;
+    height: 69px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 4.8px;
+    background: #34342e69;
+    gap: 10px;
+}
+.PDP_du_room {
+    width: 57px;
+    height: 57px;
+    margin-left: 6px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 31px;
+}
+.dernier_message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 40px;
+}
+.room_name1 {
+    color: #ffff;
+}
+.room_name2 {
+    color: #ffff;
+}
+.last_message {
+    font-size: 13.6px;
+    color: #7b7b74;
+}
+.my_room_after {
+    margin-top: 9px;
+}
+
+.discussion {
+    width: 54%;
+    height: 99vh;
+    /* color: white; */
+    position: relative;
+}
+
+#header {
+    width: 100%;
+    height: 60px;
+    margin-top: -3vh;
+    border: 1.9px solid #34342e69;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background: #0A0A07;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+    width: 95%;
+}
+
+.profil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 14.6%;
+}
+#PDP_du_room { /* .profil img */
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+} 
+#room_name {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+}
+
+#mode_sombre {
+    width: 40px;
+    height: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 9px;
+    background: #474745be;
+}
+#mode_sombre_boule {
+    width: 18px;
+    height: 18px;
+    margin-left: 22px;
+    /* margin-right: 0; */
+    border-radius: 9px;
+    background: #7b7b74;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5.5vh;
+    margin-top: 80vh;
+    position: absolute;
+}
+#input_discuss {
+    font-size: 15px;
+    width: 90%;
+    height: 6vh;
+    padding-left: 12px;
+    color: #ffff;
+    border: none;
+    border-radius: 3vh;
+    background: #34342e69;
+}
+
+#send_div {
+    width: 7vh;
+    height: 6vh;
+    background: #34342e69;
+    border-radius: 10px;
+}
+#send {
+    width: 5.5vh;
+    height: 4.5vh;
+    margin-left: 4px;
+    margin-top: 5px;
+    /* margin-bottom: auto; */
+}
+
+.themes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20%;
+    height: 99vh;
+    background: #34342e69;
+}
+
+.themes h2 {
+    text-align: center;
+    color: #ffff;
+    margin-top: 33px;
+}
+
+.themes div {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    width: 70%;
+    margin: auto;
+}
+
+#neomorph, #linear-gradient, #personalized_themes, #in_the_forest, #megan {
+    width: 8vh;
+    height: 8vh;
+    margin-left: 0;
+}
+
+#personalized_themes {
+    border-radius: 4vh;
+}
+
+#neomorph {
+    background: aqua;
+    border-radius: 15px;
+}
+
+#linear-gradient {
+    background: linear-gradient(to right, violet 50%, rgb(145, 76, 145) 50%);
+    border-radius: 4vh;
+}
+
+#meganP {
+    margin-right: 5vh;
+}
+#megan, #in_the_forest {
+    border-radius: 4vh;
+}
+
+.themes_name {
+    /* align-items: center; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffff;
+}
+
+
+/* à partir d'ici commence le "light_mode", le "dark_mode" à la ligne `12` */
+    /* j'ai ajouté 1 à chaque "className" pour mieux faciliter 
+    le .toggle("...") de l'élement visé */
+.containair1 {
+    border: 1.9px solid #34342e69;
+    background: #e8e8e8;
+} 
+
+.containair1 #header{
+    background: #e8e8e8;
+}
+
+
+.containair1 #header #mode_sombre {
+    margin-left: 0;
+    background: #cac7c7e3;
+}
+
+.containair1 #header #mode_sombre_boule {
+    margin-left: 0;
+    background: #777774be;
+}
+
+.containair1 #header .room_name2{
+    color: #0A0A07;
+}
+
+.instant_chat { /* pour : <h2 id="instant_chat">Instant Chat</h2> */
+    color: #0A0A07;
+}
+
+.containair1 #room_input { /* input de recherche de room dans les room_s existants */
+    color: #0A0A07;
+    background: #cac7c7e3;
+}
+
+.my_room1 {
+    background: #cac7c7e3;
+}
+.my_room_after1 {
+    background: #cac7c7e3;
+}
+
+.room_name1_1 { /* pour la room_list */
+    color: #0A0A07;
+}
+.room_name1_2 {
+    color: #0A0A07;
+}
+
+.header1 { /* pour l`id header` ( <div class="discussion"> <div id="header"> ) */
+    background: #e8e8e8;
+}
+
+.room_name2_1 { /* nom du room dans la room de discussion */ 
+    color: #0A0A07;
+}
+
+.containair1 #input_discuss { /* input de recherche de room dans les room_s existants */
+    color: #0A0A07;
+    background: #cac7c7e3;
+}
+
+.containair1 .themes { /* input de recherche de room dans les room_s existants */
+    color: #0A0A07;
+    background: #cac7c7e3;
+}
+
+.containair1 .themes h2, .containair1 .themes .themes_name {
+    color: #0A0A07;
+}
+
+/*  */
+.discussion1 {
+    background: url(images/in\ the\ forest.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
